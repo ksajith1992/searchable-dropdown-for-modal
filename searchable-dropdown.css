@@ -1,0 +1,96 @@
+ /* Base styling for the dropdown container */
+        .dropdown {
+            position: relative;
+            width: 100%;
+            display: inline-block;
+        }
+
+        /* Search input styling inside the dropdown menu */
+        .dropdown-menu {
+            max-height: 300px;
+            overflow-y: auto;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            z-index: 1000;
+            display: none; /* Initially hidden, shown when input is focused */
+        }
+        .input-selected-display{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Search input inside the dropdown */
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #007bff;
+        }
+
+        /* Dropdown items */
+        .dropdown-item {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .dropdown-item:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .dropdown-item.selected {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .dropdown.show {
+            display: block;
+        }
+
+        /* Adding padding to the search bar to allow smooth typing */
+        .dropdown-menu {
+            padding-top: 10px;
+        }
+
+        /* Dropdown icon inside the search input */
+        .dropdown-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #aaa;
+            pointer-events: none;
+        }
+
+        /* Styling the modal */
+        .modal-body {
+            position: relative;
+        }
+
+        /* Close button on the modal */
+        .close {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .close:hover {
+            opacity: 1;
+        }
